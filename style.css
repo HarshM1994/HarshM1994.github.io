@@ -13,7 +13,7 @@ body {
 
 .destination {
     position: relative;
-    width: 200px;
+    width: auto;
     padding: 10px;
     background-color: #ffffff;
     border: 1px solid #ced4da;
@@ -22,6 +22,8 @@ body {
     transition: transform 0.3s;
     text-align: center;
     white-space: nowrap; /* Ensures the text does not wrap */
+    display: inline-block; /* Adjust size based on content */
+    margin: 10px; /* Add margin between .destination elements */
 }
 
 .destination:hover {
