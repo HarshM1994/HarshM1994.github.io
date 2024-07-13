@@ -9,22 +9,21 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align content */
 }
 
 .destination {
-    position: relative;
-    width: auto;
+    display: inline-block; /* Allow boxes to adjust size based on content */
     padding: 10px;
     background-color: #ffffff;
     border: 1px solid #ced4da;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    text-align: center;
     white-space: nowrap; /* Ensures the text does not wrap */
-    display: inline-block; /* Adjust size based on content */
     margin: 10px; /* Add margin between .destination elements */
 }
+
 
 .destination:hover {
     transform: scale(1.05);
