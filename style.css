@@ -1,5 +1,5 @@
 body {
-    background-color: #AEC6CF; /* Change this to any pastel color you like */
+    background-color: #FFD1DC; /* Pastel background color */
     color: #343a40;
     font-family: Arial, sans-serif;
 }
@@ -11,36 +11,22 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3, p, a {
-    color: #343a40;
-}
-
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
 .road {
     margin: 20px auto;
     width: 80%;
     position: relative;
-}
-
-.road-line {
-    border-left: 3px dashed #6c757d;
+    background-image: url('path_to_your_road_image.jpg');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .destination {
-    position: absolute;
+    position: relative;
     width: 200px;
     padding: 10px;
     background-color: #ffffff;
@@ -48,8 +34,18 @@ a:hover {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .destination:hover {
     transform: scale(1.05);
 }
+
+.destination:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.destination:nth-child(even) {
+    align-self: flex-end;
+}
+
