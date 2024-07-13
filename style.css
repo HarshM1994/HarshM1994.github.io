@@ -1,5 +1,5 @@
 body {
-    background-color: #FFD1DC; /* Pastel background color */
+    background-color: #AEC6CF; /* Pastel background color */
     color: #343a40;
     font-family: Arial, sans-serif;
 }
@@ -40,11 +40,4 @@ body {
     transform: scale(1.05);
 }
 
-.destination:nth-child(odd) {
-    align-self: flex-start;
-}
-
-.destination:nth-child(even) {
-    align-self: flex-end;
-}
 
