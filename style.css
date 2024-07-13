@@ -1,7 +1,29 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #AEC6CF; /* Change this to any pastel color you like */
+    color: #343a40;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, p, a {
     color: #343a40;
 }
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 .road {
     margin: 20px auto;
